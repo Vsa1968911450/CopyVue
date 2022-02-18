@@ -2,7 +2,7 @@
 const compileUtil = {
   getvalue(expr,vm){
     return expr.split('.').reduce((data,currentVal)=>{    
-      return data[currentVal]
+      return data[currentVal] 
     },vm.$data)
   },
   setVal(expr,vm,inputVal){
